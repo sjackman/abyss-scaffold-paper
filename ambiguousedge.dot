@@ -1,0 +1,11 @@
+digraph "ambiguousedge" {
+graph [rankdir="LR"]
+t [label="..."]
+w1 [label="..."]
+w2 [label="..."]
+t -> u
+u -> v1 [style="dashed"]
+v1 -> w1
+u -> v2 [style="dashed"]
+v2 -> w2
+}

@@ -1,0 +1,7 @@
+digraph "fork" {
+graph [rankdir="LR"]
+w [label="..."]
+u -> v1 -> w
+u -> v2 -> w
+v1 -> v2 [style="bold"]
+}

@@ -1,0 +1,9 @@
+digraph "tip" {
+graph [rankdir="LR"]
+t1 [label="..."]
+v1 [label="..."]
+v [style="dashed"]
+t1 -> u
+u -> v1
+u -> v [style="dashed"]
+}

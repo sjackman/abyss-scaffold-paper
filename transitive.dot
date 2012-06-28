@@ -1,0 +1,6 @@
+digraph "transitive" {
+graph [rankdir="LR"]
+u -> v
+v -> w
+u -> w [style="dashed"]
+}

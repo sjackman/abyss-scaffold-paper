@@ -1,0 +1,10 @@
+digraph "repeat" {
+graph [rankdir="LR"]
+u1 -> w1
+u2 -> w2
+v [style="dashed"]
+u1 -> v [style="dashed"]
+u2 -> v [style="dashed"]
+v -> w1 [style="dashed"]
+v -> w2 [style="dashed"]
+}

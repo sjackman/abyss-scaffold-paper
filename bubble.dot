@@ -1,0 +1,8 @@
+digraph "bubble" {
+graph [rankdir="LR"]
+v1 [style="dashed"]
+v2 [style="dashed"]
+u -> v1 -> w [style="dashed"]
+u -> v2 -> w [style="dashed"]
+u -> w [style="bold"]
+}
