@@ -27,6 +27,46 @@ contigs that may be assembled into a scaffold.
 Background
 ==========
 
+Modern short read genome sequencing technology produces billions of
+short read, each 150 base pairs in length, although this length is
+continually increasing. When a reference genome sequence is available,
+these reads may be aligned to that reference to identify single
+nucleotide variants, other small sequence variants and large
+structural variation. When a reference sequence is not available, or
+when the experiment wishes to avoid being biased by the reference
+sequence, the sequence reads must be assembled de novo. Due to gaps in
+the sequencing and repetitive genome sequence, such an assembly is
+often fragmented into many sequences, called contigs. The relative
+order and orientation of these contigs is unknown, and the challenge
+of ordering and orienting these contigs is called scaffolding.
+
+Scaffolding is accomplished using paired-end sequencing, where both
+ends of the same DNA fragment are sequenced. The success of
+scaffolding is limited by the size of the fragment library and its
+ability to span the largest repeat sequences of the genome. Until
+recently, a paired-end sequencing library was limited to approximately
+800 base pairs. New techniques in library construction have allowed
+for the construction of mate-pair libraries as large as 5000 bp. New
+sequencing technologies require the development of new algorithms to
+fully exploit the technology. Further developing our work on the de
+novo sequencing assembly software, ABySS, we have developed a novel
+scaffolding algorithm capable of scaffolding very large genomes. We
+have used ABySS to scaffold the genome sequence assembly of the white
+spruce tree, Picea glauca, whose 20 gigabase genome is roughly seven
+times the size of the human genome.
+
+A scaffold graph is composed of vertices representing sequences and
+edges representing a bundle of paired-end reads, which indicate an
+order and orientation of those two contigs as well as a rough estimate
+of the distance separating the two sequences. Our scaffolding
+algorithm is implemented as a series of heuristic graph
+transformations, each of which identifies a small subgraph matching a
+topology typical of a particular genomic feature, such as a repeat
+sequence, and applies a transformation to that subgraph to
+successively simplify the scaffold graph. These algorithms eliminate
+ambiguities in the scaffold graph and identify contigs that are
+assembled into scaffolds.
+
 Terminology
 -----------
 
