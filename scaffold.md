@@ -378,18 +378,12 @@ Materials
 Software
 --------
 
- * [ABySS 1.3.4]
-	(http://www.bcgsc.ca/platform/bioinfo/software/abyss)
- * [ALLPATHS-LG 34731]
-	(http://www.broadinstitute.org/software/allpaths-lg/blog)
- * [BWA 0.6.1-r115]
-	(http://bio-bwa.sourceforge.net/)
- * [fermi 1.0-r675]
-	(https://github.com/lh3/fermi)
- * [SGA 0.9.20]
-	(https://github.com/jts/sga)
- * [SOAPdenovo 1.05]
-	(http://soap.genomics.org.cn/soapdenovo.html)
+ * [ABySS 1.3.4](http://www.bcgsc.ca/platform/bioinfo/software/abyss)
+ * [ALLPATHS-LG 34731](http://www.broadinstitute.org/software/allpaths-lg/blog)
+ * [BWA 0.6.1-r115](http://bio-bwa.sourceforge.net/)
+ * [fermi 1.0-r675](https://github.com/lh3/fermi)
+ * [SGA 0.9.20](https://github.com/jts/sga)
+ * [SOAPdenovo 1.05](http://soap.genomics.org.cn/soapdenovo.html)
 
 Sequencing data of human sample NA12878
 ---------------------------------------
@@ -399,8 +393,7 @@ Illumina reads.
 
 Eight lanes of paired-end data were used, four lanes of the paired-end
 library Solexa-18483 and four lanes of the library Solexa-18484:
-[ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878-hs37.bam]
-(ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878-hs37.bam)
+[ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878-hs37.bam](ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878-hs37.bam)
 
 | Library      | Lane              | Reads      | Bases (bp) |
 |--------------|-------------------|------------|------------|
@@ -416,8 +409,7 @@ library Solexa-18483 and four lanes of the library Solexa-18484:
 
 Four lanes of the mate-pair library Solexa-30807 (SRX027699) were
 used:
-[http://sra.dnanexus.com/experiments/SRX027699]
-(http://sra.dnanexus.com/experiments/SRX027699)
+[http://sra.dnanexus.com/experiments/SRX027699](http://sra.dnanexus.com/experiments/SRX027699)
 
 | SRA run   | Lane              | Reads     | Bases (bp) |
 |-----------|-------------------|-----------|------------|
@@ -431,20 +423,15 @@ Assemblies of human sample NA12878
 ----------------------------------
 
  * ABySS 1.3.4
-	[ftp://ftp.bcgsc.ca/public/sjackman/NA12878/NA12878-20120605.fa.bz2]
-	(ftp://ftp.bcgsc.ca/public/sjackman/NA12878/NA12878-20120605.fa.bz2)
+	[ftp://ftp.bcgsc.ca/public/sjackman/NA12878/NA12878-20120605.fa.bz2](ftp://ftp.bcgsc.ca/public/sjackman/NA12878/NA12878-20120605.fa.bz2)
  * ALLPATHS-LG 34731
-	[ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/vertebrates_mammals/Homo_sapiens/HsapALLPATHS1/Primary_Assembly/unplaced_scaffolds/FASTA/unplaced.scaf.fa.gz]
-	(ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/vertebrates_mammals/Homo_sapiens/HsapALLPATHS1/Primary_Assembly/unplaced_scaffolds/FASTA/unplaced.scaf.fa.gz)
+	[ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/vertebrates_mammals/Homo_sapiens/HsapALLPATHS1/Primary_Assembly/unplaced_scaffolds/FASTA/unplaced.scaf.fa.gz](ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/vertebrates_mammals/Homo_sapiens/HsapALLPATHS1/Primary_Assembly/unplaced_scaffolds/FASTA/unplaced.scaf.fa.gz)
  * fermi 1.0-r675
-	[ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878.p5.fq.gz]
-	(ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878.p5.fq.gz)
+	[ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878.p5.fq.gz](ftp://hengli:reichdata@ftp.broadinstitute.org/NA12878-hs37d5-aln/NA12878.p5.fq.gz)
  * SGA 0.9.20
-	[ftp://ftp.sanger.ac.uk/pub/js18/for-shaun/human.sga.mp.build1.scaffolds.fa.gz]
-	(ftp://ftp.sanger.ac.uk/pub/js18/for-shaun/human.sga.mp.build1.scaffolds.fa.gz)
+	[ftp://ftp.sanger.ac.uk/pub/js18/for-shaun/human.sga.mp.build1.scaffolds.fa.gz](ftp://ftp.sanger.ac.uk/pub/js18/for-shaun/human.sga.mp.build1.scaffolds.fa.gz)
  * SOAPdenovo 1.05
-	[http://dl.dropbox.com/u/87616646/SOAPdenovo_scafSeq.tar.gz]
-	(http://dl.dropbox.com/u/87616646/SOAPdenovo_scafSeq.tar.gz)
+	[http://dl.dropbox.com/u/87616646/SOAPdenovo_scafSeq.tar.gz](http://dl.dropbox.com/u/87616646/SOAPdenovo_scafSeq.tar.gz)
 
 References
 ==========
