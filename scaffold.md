@@ -68,12 +68,12 @@ ambiguities in the scaffold graph and identify contigs that are
 assembled into scaffolds.
 
 We compare our scaffolding results to that of the *de novo* assembly
-software packages [ALLPATHS-LG][allpathslg] and [SGA][sga]. These two
-software packages and ABySS were used to assemble short-read
-sequencing data of the human sample [NA12878][depristo]. The scaffolds
-of these assemblies were aligned to the reference human genome to
-determine the contiguity and correctness of the scaffolds and compare
-the performance of these tools.
+software packages [ALLPATHS-LG][allpathslg], [SGA][sga] and
+[SOAPdenovo][soapdenovo]. These three software packages and ABySS were
+used to assemble short-read sequencing data of the human sample
+[NA12878][depristo]. The scaffolds of these assemblies were aligned to
+the reference human genome to determine the contiguity and correctness
+of the scaffolds and compare the performance of these tools.
 
 Terminology
 -----------
@@ -330,33 +330,33 @@ end positions must also be a monotonically increasing sequence. The
 scaffold is broken at any pair of contigs that do not satisfy these
 criteria, and the aligned scaffold N50 is calculated.
 
-This analysis was repeated for the three assemblies described in [H.
-Li 2012][fermi]: [ALLPATHS-LG][allpathslg], [fermi][fermi] and
-[SGA][sga]. The ALLPATHS-LG assembly is downloaded from NCBI, and the
-fermi and SGA assemblies were provided by Heng Li and Jared Simpson
-respectively (see [Materials]). The ABySS, fermi and SGA assemblies
-use identical data sets. The ALLPATHS-LG assembly uses a deeper 100x
-data set and two mate-pair libraries. The contigs assembled by fermi
-were assembled into scaffolds using the scaffolding algorithm of
-ABySS.
+This analysis was repeated for assemblies of [NA12878][depristo] by
+[ALLPATHS-LG][allpathslg], [fermi][fermi], [SGA][sga] and
+[SOAPdenovo][soapdenovo]. The ALLPATHS-LG assembly is downloaded from
+NCBI, and the fermi, SGA and SOAPdenovo assemblies were provided by
+Heng Li, Jared Simpson and Ruibang Luo respectively (see [Materials]).
+The ABySS, fermi, SGA and SOAPdenovo assemblies use identical data
+sets. The ALLPATHS-LG assembly uses a deeper 100x data set and two
+mate-pair libraries. The contigs assembled by fermi were assembled
+into scaffolds using the scaffolding algorithm of ABySS.
 
-|                      | ABySS  | ALLPATHS-LG | fermi  | SGA    |
-|----------------------|--------|-------------|--------|--------|
-|Contig bp             | 2.70 G | 2.61 G      | 2.75 G | 2.76 G |
-|Aligned contig bp     | 2.69 G | 2.61 G      | 2.73 G | 2.74 G |
-|Covered ref. bp       | 2.66 G | 2.59 G      | 2.70 G | 2.70 G |
-|Contig N50            | 9.75 k | 23.8 k      | 16.6 k | 9.91 k |
-|Aligned contig N50    | 9.72 k | 23.7 k      | 16.6 k | 9.90 k |
-|Contig breakpoints    | 1590   | 3380        | 920    | 1549   |
-|Scaffold N50          | 273 k  | 11.5 M      | 446 k  | 167 k  |
-|At least 500 bp & Q10 | 276 k  | 11.3 M      | 462 k  | 173 k  |
-|Aligned scaffold N50  | 270 k  | 2.30 M      | 458 k  | 168 k  |
-|Scaffold breakpoints  | 1933   | 3008        | 1333   | 2101   |
+|                      | ABySS  | ALLPATHS-LG | fermi  | SGA    | SOAPdenovo |
+|----------------------|--------|-------------|--------|--------|------------|
+|Contig bp             | 2.70 G | 2.61 G      | 2.75 G | 2.76 G | 2.66 G     |
+|Aligned contig bp     | 2.69 G | 2.61 G      | 2.73 G | 2.74 G | 2.64 G     |
+|Covered ref. bp       | 2.66 G | 2.59 G      | 2.70 G | 2.70 G | 2.64 G     |
+|Contig N50            | 9.75 k | 23.8 k      | 16.6 k | 9.91 k | 11.1 k     |
+|Aligned contig N50    | 9.72 k | 23.7 k      | 16.6 k | 9.90 k | 11.1 k     |
+|Contig breakpoints    | 1590   | 3380        | 920    | 1549   | 931        |
+|Scaffold N50          | 273 k  | 11.5 M      | 446 k  | 167 k  | 565 k      |
+|At least 500 bp & Q10 | 276 k  | 11.3 M      | 462 k  | 173 k  | 565 k      |
+|Aligned scaffold N50  | 270 k  | 2.30 M      | 458 k  | 168 k  | 557 k      |
+|Scaffold breakpoints  | 1933   | 3008        | 1333   | 2101   | 717        |
 [Table 1. Statistics of the human genome assemblies of human sample
 NA12878. These statistics consider contigs 200 bp or larger. The
-ALLPATHS-LG assembly uses a different data set than ABySS, fermi and
-SGA. The fermi contigs are assembled into scaffolds scaffold using
-ABySS.][comparison]
+ALLPATHS-LG assembly uses a different data set than ABySS, fermi, SGA
+and SOAPdenovo. The fermi contigs are assembled into scaffolds
+scaffold using ABySS.][comparison]
 
 Plotting the aligned contig N50 versus the number of breakpoints
 yields a plot where the best assemblies are found in the top-left
@@ -388,6 +388,8 @@ Software
 	(https://github.com/lh3/fermi)
  * [SGA 0.9.20]
 	(https://github.com/jts/sga)
+ * [SOAPdenovo 1.05]
+	(http://soap.genomics.org.cn/soapdenovo.html)
 
 Sequencing data of human sample NA12878
 ---------------------------------------
@@ -440,6 +442,9 @@ Assemblies of human sample NA12878
  * SGA 0.9.20
 	[ftp://ftp.sanger.ac.uk/pub/js18/for-shaun/human.sga.mp.build1.scaffolds.fa.gz]
 	(ftp://ftp.sanger.ac.uk/pub/js18/for-shaun/human.sga.mp.build1.scaffolds.fa.gz)
+ * SOAPdenovo 1.05
+	[http://dl.dropbox.com/u/87616646/SOAPdenovo_scafSeq.tar.gz]
+	(http://dl.dropbox.com/u/87616646/SOAPdenovo_scafSeq.tar.gz)
 
 References
 ==========
@@ -489,3 +494,12 @@ Jared T Simpson and Richard Durbin
 Efficient de novo assembly of large genomes using compressed data
 structures.
 Genome Research, 22 (3), 549-556.
+
+[soapdenovo]: http://genome.cshlp.org/content/20/2/265
+Ruiqiang Li, Hongmei Zhu, Jue Ruan, Wubin Qian, Xiaodong Fang,
+Zhongbin Shi, Yingrui Li, Shengting Li, Gao Shan, Karsten Kristiansen,
+Songgang Li, Huanming Yang, Jian Wang and Jun Wang
+(2010).
+De novo assembly of human genomes with massively parallel short read
+sequencing.
+Genome Research, 20 (2), 265-272.
