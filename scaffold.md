@@ -475,7 +475,7 @@ Exploring single-sample SNP and INDEL calling with whole-genome de
 novo assembly.
 Bioinformatics, advance access.
 
-[sga]: http://genome.cshlp.org/lookup/doi/10.1101/gr.126953.111
+[sga]: http://genome.cshlp.org/content/22/3/549
 Jared T Simpson and Richard Durbin
 (2012).
 Efficient de novo assembly of large genomes using compressed data
