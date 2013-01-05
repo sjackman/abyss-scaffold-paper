@@ -334,9 +334,9 @@ ABySS.
 
 |                      | ABySS  | ALLPATHS-LG | fermi  | SGA    |
 |----------------------|--------|-------------|--------|--------|
-|Contig bp             | 2.70 M | 2.61 M      | 2.75 M | 2.76 M |
-|Aligned contig bp     | 2.69 M | 2.61 M      | 2.73 M | 2.74 M |
-|Covered ref. bp       | 2.66 M | 2.59 M      | 2.70 M | 2.70 M |
+|Contig bp             | 2.70 G | 2.61 G      | 2.75 G | 2.76 G |
+|Aligned contig bp     | 2.69 G | 2.61 G      | 2.73 G | 2.74 G |
+|Covered ref. bp       | 2.66 G | 2.59 G      | 2.70 G | 2.70 G |
 |Contig N50            | 9.75 k | 23.8 k      | 16.6 k | 9.91 k |
 |Aligned contig N50    | 9.72 k | 23.7 k      | 16.6 k | 9.90 k |
 |Contig breakpoints    | 1590   | 3380        | 920    | 1549   |
