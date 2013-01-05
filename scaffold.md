@@ -67,6 +67,14 @@ successively simplify the scaffold graph. These algorithms eliminate
 ambiguities in the scaffold graph and identify contigs that are
 assembled into scaffolds.
 
+We compare our scaffolding results to that of the *de novo* assembly
+software packages [ALLPATHS-LG][allpathslg] and [SGA][sga]. These two
+software packages and ABySS were used to assemble short-read
+sequencing data of the human sample [NA12878][depristo]. The scaffolds
+of these assemblies were aligned to the reference human genome to
+determine the contiguity and correctness of the scaffolds and compare
+the performance of these tools.
+
 Terminology
 -----------
 
