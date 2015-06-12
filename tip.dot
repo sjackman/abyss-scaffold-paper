@@ -1,4 +1,5 @@
 digraph "tip" {
+label = "Prune tips"
 graph [rankdir="LR"]
 t1 [label="..."]
 v1 [label="..."]

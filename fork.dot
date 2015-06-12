@@ -1,4 +1,5 @@
 digraph "fork" {
+label = "Resolve forks"
 graph [rankdir="LR"]
 w [label="..."]
 u -> v1 -> w

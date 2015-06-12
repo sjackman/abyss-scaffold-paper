@@ -1,4 +1,5 @@
 digraph "transitive" {
+label = "Remove transitive edges"
 graph [rankdir="LR"]
 u -> v
 v -> w

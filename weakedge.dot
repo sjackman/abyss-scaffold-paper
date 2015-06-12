@@ -1,4 +1,5 @@
 digraph "weakedge" {
+label = "Remove weak edges"
 graph [rankdir="LR"]
 u1 -> v1
 u2 -> v2

@@ -19,7 +19,10 @@ scaffold.html: $(figures)
 	cupsfilter $< >$@ 2>/dev/null
 
 %.png: %.dot
-	dot -Tpng $< >$@
+	dot -Tpng -Gsize='6,3!' $< >$@
 
 %.png: %.m %.mat
 	octave -q $<
+
+patterns.png: fork.png tip.png repeat.png transitive.png bubble.png weakedge.png
+	montage $^ -geometry +1+1 -units PixelsPerInch -density 300 $@

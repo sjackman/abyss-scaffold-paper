@@ -1,4 +1,5 @@
 digraph "bubble" {
+label = "Pop bubbles"
 graph [rankdir="LR"]
 v1 [style="dashed"]
 v2 [style="dashed"]
