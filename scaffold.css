@@ -20,22 +20,21 @@ a:hover {
 	background: #222222;
 }
 pre {
-	background-color: #dddddd;
+	background-color: #eeeeee;
 	border: #777777 1pt solid;
 }
 
 /* Layout */
-p {
-	text-align: justify;
-	min-width: 18pc;
+body {
+	margin-left: 6pc;
 	max-width: 42pc;
 }
 pre {
 	word-wrap: break-word;
-	max-width: 42pc;
 	margin: 1pc;
 	padding-left: 1pc;
 	padding-right: 1pc;
+	padding-bottom: 6pt;
 }
 caption {
 	caption-side: bottom;
